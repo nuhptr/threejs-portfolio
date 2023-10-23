@@ -38,7 +38,7 @@ export default function Navbar() {
                </p>
             </Link>
 
-            <ul className="flex-row hidden gap-10 list-none sm:flex">
+            <ul className="flex-row hidden list-none gap-10 sm:flex">
                {navLinks.map((nav) => (
                   <li
                      key={nav.id}
@@ -61,7 +61,7 @@ export default function Navbar() {
                <div
                   className={`${!toggle ? "hidden" : "flex"} 
                   p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-                  <ul className="flex flex-col items-start justify-end flex-1 gap-4 list-none">
+                  <ul className="flex flex-col items-start justify-end flex-1 list-none gap-4">
                      {navLinks.map((nav) => (
                         <li
                            key={nav.id}
