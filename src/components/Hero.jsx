@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 import { ComputersCanvas } from "./canvas"
 
-export default function Hero() {
+const Hero = () => {
    return (
       <section className="relative w-full h-screen mx-auto">
          <div className={`padding-x absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -17,7 +17,7 @@ export default function Hero() {
                   Hi, I'm <span className="text-[#915eff]">Adi Nugraha</span>
                </h1>
                <p className="mt-2 lg:leading-normal heroSubText text-white-100">
-                  I develope 3D visuals, user <br className="hidden sm:block" /> interfaces and web applications
+                  I develope 3D visuals web, UI UX Designer <br className="hidden sm:block" /> and Web Applications
                </p>
             </div>
          </div>
@@ -38,3 +38,5 @@ export default function Hero() {
       </section>
    )
 }
+
+export default Hero
