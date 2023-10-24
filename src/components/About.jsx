@@ -1,9 +1,8 @@
-import React from "react"
 import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 
 import { services } from "../constant"
-import StarWrapper from "../hoc/SectionWrapper"
+import SectionWrapper from "../hoc/SectionWrapper"
 import { fadeIn, textVariant } from "../utilities/motion"
 
 const ServiceCard = ({ index, title, icon }) => (
@@ -15,7 +14,6 @@ const ServiceCard = ({ index, title, icon }) => (
             options={{ max: 45, scale: 1, speed: 450 }}
             className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
             <img src={icon} alt="web-development" className="object-contain w-16 h-16" />
-
             <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
          </div>
       </motion.div>
@@ -25,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
    return (
       <>
-         <motion.div variants={textVariant}>
+         <motion.div variants={textVariant()}>
             <p className="sectionSubText">Introduction</p>
             <h2 className="sectionHeadText">Overview</h2>
          </motion.div>
@@ -48,4 +46,4 @@ const About = () => {
    )
 }
 
-export default StarWrapper(About, "about")
+export default SectionWrapper(About, "about")
