@@ -25,7 +25,7 @@ const ExperienceCard = ({ experience }) => {
             <p className="text-secondary text-[16px] font-semibold tracking-tight m-0">{experience.company_name}</p>
          </div>
 
-         <ul className="mt-5 ml-5 space-y-2 list-disc">
+         <ul className="mt-5 ml-5 list-disc space-y-2">
             {experience.points.map((point, index) => (
                <li
                   key={`experience-point-${index}`}
