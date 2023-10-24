@@ -1,5 +1,5 @@
-import React from "react"
-
-export default function Feedbacks() {
+const Feedbacks = () => {
    return <div>Feedbacks</div>
 }
+
+export default Feedbacks
