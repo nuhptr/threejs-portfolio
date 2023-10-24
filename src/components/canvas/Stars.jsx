@@ -1,3 +1,3 @@
-export default function Stars() {
+export default function StarsCanvas() {
    return <div>Stars</div>
 }
