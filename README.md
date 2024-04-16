@@ -1,6 +1,6 @@
 # Threejs Portfolio
 
-Create a portfolio using threejs
+Create a portfolio using threejs with some cool animations and effects.
 
 ![Image](https://github.com/nuhptr/threejs-portfolio/assets/50306963/99c4306e-2a25-49b3-a8f5-4c09190fb65b)
 
